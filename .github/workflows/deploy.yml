@@ -37,8 +37,8 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "rak99-mock-mercha-60"
+          project: "rak99-tutorial-with-vue"
           entrypoint: "https://deno.land/std@0.217.0/http/file_server.ts"
           root: "dist"
-          
+          include: /api
           
